@@ -7,29 +7,31 @@ body {
 .list {
   list-style: none;
 }
-
-.logo {
+.web-log {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 31px;
+  /* identical to box height */
 
   letter-spacing: 0.03em;
 
   color: #2196f3;
 }
-.studio {
+.studio-log {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.19;
+  line-height: 31px;
+  /* identical to box height */
 
   letter-spacing: 0.03em;
 
-  color: #2196f3;
+  color: #000000;
 }
+
 .studio {
   font-weight: 500;
   font-size: 14px;
