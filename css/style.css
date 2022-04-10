@@ -1,5 +1,17 @@
+:root {
+  --header-color: #ffffff;
+  --name-color: #212121;
+  --text-color: #757575;
+  --button-color: #2196f3;
+  --footer-text: #ffffff99;
+}
+
 body {
   font-family: roboto, Tahoma, sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  color: #212121;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 .link {
   text-decoration: none;
@@ -12,14 +24,14 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
   /* identical to box height */
 
   letter-spacing: 0.03em;
 
-  color: #2196f3;
+  color: var(--button-color);
 }
-.studio-log {
+.logotype {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
@@ -34,68 +46,86 @@ body {
 
 .studio {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--name-color);
 }
 
 .studio:hover {
-  color: #2196f3;
+  color: var(--button-color);
+}
+.studio:focus {
+  color: var(--button-color);
 }
 
 .portfolio {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--name-color);
 }
 
 .portfolio:hover {
-  color: #2196f3;
+  color: var(--button-color);
 }
-
+.portfolio:focus {
+  color: var(--button-color);
+}
 .contacts {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--name-color);
 }
 .contacts:hover {
-  color: #2196f3;
+  color: var(--button-color);
 }
-
+.contacts:focus {
+  color: var(--button-color);
+}
 .tel {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.02em;
 
-  color: #757575;
+  color: var(--text-color);
 }
 .tel:hover {
-  color: #2196f3;
+  color: var(--button-color);
 }
-
+.tel:focus {
+  color: var(--button-color);
+}
 .mail {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: var(--name-color);
 }
 
 .mail:hover {
-  color: #2196f3;
+  color: var(--button-color);
 }
-
-/*----------------baner----------------*/
+.mail:focus {
+  color: var(--button-color);
+}
+/*----------------HERO----------------*/
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 .baner {
   font-weight: 900;
@@ -105,99 +135,118 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--header-color);
 }
 .ban {
-  background-color: #757575;
+  background-color: var(--text-color);
 }
 .ban-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
 
-  color: #ffffff;
-}
-
-.ban-btn {
+  color: var(--header-color);
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+
+/*----------------CLASS----------------*/
+
+.class-photos {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  color: var(--name-color);
+}
+
 /*----------------work----------------*/
 
-h3 {
+.work-name {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #212121;
+  color: var(--name-color);
 }
 
-.Attention,
-.Punctuality,
-.Planning,
-.technology {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-
-  color: #212121;
-}
-
-.Attention-text,
-.Punctuality-text,
-.Planning-text,
-.technology-text {
+.work-text {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--text-color);
 }
 /*----------------team----------------*/
 
-.igor,
-.olga,
-.nikolay,
-.mihail {
+.team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 
-  color: #212121;
+  color: var(--name-color);
 }
 
-.igor-text,
-.olga-text,
-.nikolay-text,
-.mihail-text {
+.team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 
-  color: #757575;
+  color: var(--text-color);
 }
-.team-h {
+.team-type {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
+
+  color: var(--name-color);
+}
+
+/*----------------buttons----------------*/
+
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 
   color: #212121;
+
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button:hover {
+  color: #ffffff;
+  background: #2196f3;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/*--------------portfolio-list----------------*/
+
+.portfolio-neme {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--name-color);
+}
+
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--text-color);
 }
 
 /*----------------footer----------------*/
+
+.adress {
+  font-style: normal;
+}
 
 .footer {
   background-color: #757575;
@@ -205,26 +254,20 @@ h3 {
 
 .map {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: var(--header-color);
 }
 .mail-footer {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-text);
 }
 
 .tel-footer {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-text);
 }
