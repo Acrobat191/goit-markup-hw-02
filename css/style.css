@@ -43,7 +43,6 @@ body {
 
   color: #000000;
 }
-
 .studio {
   font-weight: 500;
   line-height: 1.71;
@@ -114,7 +113,11 @@ body {
   color: var(--button-color);
 }
 /*----------------HERO----------------*/
-.visually-hidden {
+.light {
+  color: var(--button-color);
+}
+
+.color-studio:acc .visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
