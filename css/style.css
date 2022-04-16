@@ -36,6 +36,10 @@ ol {
   padding-left: 0;
   margin: 0;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .conteiner {
   width: 1200px;
@@ -52,6 +56,7 @@ img {
   display: flex;
   height: 80px;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 .item,
 .mail,
@@ -239,7 +244,6 @@ img {
 }
 
 .class-photos {
-  padding-top: 94px;
   margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
@@ -258,7 +262,6 @@ img {
 /*----------------team----------------*/
 .team {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .team-type {
@@ -294,7 +297,6 @@ img {
   color: var(--text-color);
 }
 .team-type {
-  padding-top: 94px;
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -306,7 +308,6 @@ img {
 /*----------------buttons----------------*/
 .buttons {
   display: flex;
-  padding-top: 94px;
   padding-bottom: 50px;
   justify-content: center;
 }
